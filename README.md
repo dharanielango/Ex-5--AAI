@@ -1,19 +1,26 @@
-<H3>Dharani Elango</H3>
-<H3>212221230021</H3>
-<H3>EX. NO.5</H3>
+#### Dharani Elango
+#### 212221230021
+#### EX. NO.5
 
-<H1 ALIGN =CENTER> Implementation of Kalman Filter</H1>
-<H3>Aim:</H3> 
+## Implementation of Kalman Filter
+### Aim:
 To Construct a Python Code to implement the Kalman filter to predict the position and velocity of an object.
-<H3>Algorithm:</H3>
-Step 1: Define the state transition model F, the observation model H, the process noise covariance Q, the measurement noise covariance R, the initial state estimate x0, and the initial error covariance P0.<BR>
-Step 2:  Create a KalmanFilter object with these parameters.<BR>
-Step 3: Simulate the movement of the object for a number of time steps, generating true states and measurements. <BR>
-Step 3: For each measurement, predict the next state using kf.predict().<BR>
-Step 4: Update the state estimate based on the measurement using kf.update().<BR>
-Step 5: Store the estimated state in a list.<BR>
-Step 6: Plot the true and estimated positions.<BR>
-<H3>Program:</H3>
+### Algorithm:
+#### Step 1:
+Define the state transition model F, the observation model H, the process noise covariance Q, the measurement noise covariance R, the initial state estimate x0, and the initial error covariance P0.<BR>
+#### Step 2: 
+Create a KalmanFilter object with these parameters.<BR>
+#### Step 3:
+Simulate the movement of the object for a number of time steps, generating true states and measurements. <BR>
+#### Step 3:
+For each measurement, predict the next state using kf.predict().<BR>
+#### Step 4: 
+Update the state estimate based on the measurement using kf.update().<BR>
+#### Step 5:
+Store the estimated state in a list.<BR>
+#### Step 6:
+Plot the true and estimated positions.<BR>
+### Program:
 ```
 import numpy as np
 import matplotlib.pyplot as plt
@@ -57,12 +64,12 @@ plt.plot([s[0] for s in est_states],label="Estimate")
 plt.legend()
 plt.show()
 ```
-<H3>Output:</H3>
-![image](https://github.com/dharanielango/Ex-5--AAI/assets/94530523/113972fe-1d90-41e8-a26b-16892fb76e69)
+### Output:
+
+![image](https://github.com/dharanielango/Ex-5--AAI/assets/94530523/a8b9c4c8-929c-4b72-9a88-7b0adbb4edbf)
 
 
-
-<H3>Results:</H3>
+### Results:
 Thus, Kalman filter is implemented to predict the next position and   velocity in Python
 
 
